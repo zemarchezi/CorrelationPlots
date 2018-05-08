@@ -17,8 +17,10 @@ filename = 'Dados_Alternaria_Alternata.csv'
 path = os.getcwd()
 direct = path+'/data/'
 
-colName = ['O. odorifera', 'O. diospyrifolia', 'O. puberula', 'C. dinisii',]
-Par = ['Media_odo', 'Media_dio', 'Media_pub', 'Media_din']
+# colName = ['O. odorifera', 'O. diospyrifolia', 'O. puberula', 'C. dinisii',]
+# Par = ['Media_odo', 'Media_dio', 'Media_pub', 'Media_din']
+colName = ['O. odorifera', 'O. diospyrifolia','C. dinisii',]
+Par = ['Media_odo', 'Media_dio', 'Media_din']
 #
 fungo = 'A. alternata'
 # fungo = 'A. flavus'
@@ -33,49 +35,7 @@ rd.loadData()
 a = rd.readParam()
 
 
-pl = PlotData(a, colName, figname=fungo+'_lin.png', directory=path+'/figs/', fungo=fungo, savePlot=True)
+pl = PlotData(a, colName, figname=fungo+'_quad3p.png', directory=path+'/figs/', fungo=fungo, savePlot=True)
 
 
-pl.plote(fitDegree=1)
-
-######
-
-#
-##
-
-#####
-## Plot
-###
-
-
-
-# index=np.linspace(50,100,6)
-
-# Alternaria = pd.DataFrame(np.transpose([data['Media_odo'], data['Media_dio'], data['Media_pub'], data['Media_din']]), columns= colName, index=index)
-#
-#
-# x = index
-# y = Alternaria[colName[1]]
-#
-# aa = polfit(x,y,2)
-#
-# # fit = np.polyfit(x,y, 2)
-# fit_fn = np.poly1d(aa['polynomial'])
-#
-# print (aa['determination'])
-#
-# print (poly2latex(aa['polynomial']))
-#
-# ss = np.linspace(50,100,100)
-#
-# plt.plot(x,y, '.', ss, fit_fn(ss),'-')
-# plt.text(80,6, poly2latex(aa['polynomial']))
-# plt.show()
-# exit()
-#
-#
-# Alternaria.plot(subplots=True, layout=(2, 2), figsize=(6, 6), sharex=False)
-# plt.show()
-
-# plt.plot(a.index, a['Media C. dinisii'])
-# plt.show()
+pl.plote(fitDegree=2)

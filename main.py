@@ -11,9 +11,9 @@ from ManageData import ReadData
 from PlotData import PlotData
 import os
 
-filename = 'Dados_Alternaria_Alternata.csv'
+# filename = 'Dados_Alternaria_Alternata.csv'
 # filename = 'Dados_Aspergillus_flavus.csv'
-# filename = 'Dados_Penicillium_crustosum.csv'
+filename = 'Dados_Penicillium_crustosum.csv'
 path = os.getcwd()
 direct = path+'/data/'
 
@@ -22,9 +22,9 @@ direct = path+'/data/'
 colName = ['O. odorifera', 'O. diospyrifolia','C. dinisii',]
 Par = ['Media_odo', 'Media_dio', 'Media_din']
 #
-fungo = 'A. alternata'
+# fungo = 'A. alternata'
 # fungo = 'A. flavus'
-# fungo = 'P. crustosum'
+fungo = 'P. crustosum'
 
 ###################
 

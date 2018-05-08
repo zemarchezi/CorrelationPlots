@@ -17,9 +17,9 @@ filename = 'Dados_Alternaria_Alternata.csv'
 path = os.getcwd()
 direct = path+'/data/'
 
-colName = ['O. odorifera', 'O. diospyrifolia', 'O. puberula', 'O. dinisii',]
+colName = ['O. odorifera', 'O. diospyrifolia', 'O. puberula', 'C. dinisii',]
 Par = ['Media_odo', 'Media_dio', 'Media_pub', 'Media_din']
-# 
+#
 fungo = 'A. alternata'
 # fungo = 'A. flavus'
 # fungo = 'P. crustosum'

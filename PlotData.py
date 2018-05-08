@@ -59,7 +59,7 @@ class PlotData():
         axarr[0,1].set_ylim(np.min(self.arg[self.param[1]])-1,np.max(self.arg[self.param[1]])+1)
         # axarr[0,1].grid(color='gray',linestyle='--')
         axarr[0,1].set_title('$\t{%s}$' %(self.param[1]))
-        axarr[0,1].text(55,np.max(self.arg[self.param[1]])-1.5, 'y = ' + self.pollatex[0]+'\n $R^2$ = %0.3f' %  (self.rSquare[1]), fontsize=8)
+        axarr[0,1].text(55,np.max(self.arg[self.param[1]])-1.5, 'y = ' + self.pollatex[1]+'\n $R^2$ = %0.3f' %  (self.rSquare[1]), fontsize=8)
 
         plt3 = axarr[1,0].plot(self.arg.index, self.arg[self.param[2]], '.', ms=8)
         plt3 = axarr[1,0].plot(ss, self.fitCurve[2],'-')
@@ -67,7 +67,7 @@ class PlotData():
         axarr[1,0].set_ylim(np.min(self.arg[self.param[2]])-1,np.max(self.arg[self.param[2]])+1)
         # axarr[1,0].grid(color='gray',linestyle='--')
         axarr[1,0].set_title('$\t{%s}$' %(self.param[2]))
-        axarr[1,0].text(55,np.max(self.arg[self.param[2]])-1, 'y = ' + self.pollatex[0]+'\n $R^2$ = %0.3f' %  (self.rSquare[2]), fontsize=8)
+        axarr[1,0].text(55,np.max(self.arg[self.param[2]])-1, 'y = ' + self.pollatex[2]+'\n $R^2$ = %0.3f' %  (self.rSquare[2]), fontsize=8)
 
         plt4 = axarr[1,1].plot(self.arg.index, self.arg[self.param[3]], '.', ms=8)
         plt4 = axarr[1,1].plot(ss, self.fitCurve[3],'-')
@@ -75,7 +75,7 @@ class PlotData():
         axarr[1,1].set_ylim(np.min(self.arg[self.param[3]])-1,np.max(self.arg[self.param[3]])+1)
         # axarr[1,1].grid(color='gray',linestyle='--')
         axarr[1,1].set_title('$\t{%s}$' %(self.param[3]))
-        axarr[1,1].text(55,np.max(self.arg[self.param[3]])-1.7, 'y = ' + self.pollatex[0]+'\n $R^2$ = %0.3f' %  (self.rSquare[3]), fontsize=8)
+        axarr[1,1].text(55,np.max(self.arg[self.param[3]])-1.7, 'y = ' + self.pollatex[3]+'\n $R^2$ = %0.3f' %  (self.rSquare[3]), fontsize=8)
         if self.savePlot:
             plt.savefig(self.dir + self.figname, format='png')
 #

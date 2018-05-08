@@ -33,10 +33,10 @@ rd.loadData()
 a = rd.readParam()
 
 
-pl = PlotData(a, colName, figname=fungo+'_quad.png', directory=path+'/figs/', fungo=fungo, savePlot=True)
+pl = PlotData(a, colName, figname=fungo+'_lin.png', directory=path+'/figs/', fungo=fungo, savePlot=True)
 
 
-pl.plote(fitDegree=2)
+pl.plote(fitDegree=1)
 
 ######
 

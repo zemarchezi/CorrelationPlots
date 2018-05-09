@@ -19,7 +19,7 @@ direct = path+'/data/'
 
 # colName = ['O. odorifera', 'O. diospyrifolia', 'O. puberula', 'C. dinisii',]
 # Par = ['Media_odo', 'Media_dio', 'Media_pub', 'Media_din']
-colName = ['O. odorifera', 'O. diospyrifolia','C. dinisii',]
+colName = ['$\t{O. odorifera}$', '$\t{O. diospyrifolia}$','$\t{C. dinisii}$',]
 Par = ['Media_odo', 'Media_dio', 'Media_din']
 #
 fungo = 'A. alternata'
